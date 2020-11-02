@@ -1,0 +1,12 @@
+.Header-intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-family: 'Calistoga', cursive;
+  width: 40%;
+}

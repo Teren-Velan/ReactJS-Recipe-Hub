@@ -1,0 +1,22 @@
+.Mid-Home{
+  height: 90vh;
+  width: 100%;
+  background-image: url(./images/background-img-2\ -1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
