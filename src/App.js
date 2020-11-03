@@ -42,14 +42,14 @@ function App() {
 
 
     <Router>
-        <Navbar className="mt-4 ml-5 position-absolute" collapseOnSelect expand="lg" bg="transparent" variant="light">
+        <Navbar className="mt-4 ml-5 position-absolute" collapseOnSelect expand="lg">
         <Navbar.Brand href="#home">Taste The World</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link style={{color: "#000" , fontSize: "22px"}}  href="/">Home</Nav.Link>
 
-      <NavDropdown title="Cuisine" id="collasible-nav-dropdown">
+      <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Cuisine" id="collasible-nav-dropdown">
         <Nav.Link className="nav-link" href="/American">American</Nav.Link>
         <Nav.Link className="nav-link" href="/Asian">Asian</Nav.Link>
         <Nav.Link className="nav-link" href="/Caribbean">Caribbean</Nav.Link>
@@ -62,7 +62,7 @@ function App() {
         <Nav.Link className="nav-link" href="/Nordic">Nordic</Nav.Link>
       </NavDropdown>
 
-      <NavDropdown title="Diet" id="collasible-nav-dropdown">
+      <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Diet" id="collasible-nav-dropdown">
         <Nav.Link className="nav-link" href="/HighProtein">High-Protein</Nav.Link>
         <Nav.Link className="nav-link" href="/GlutenFree">Gluten-Free</Nav.Link>
         <Nav.Link className="nav-link" href="/Keto">Keto</Nav.Link>
@@ -72,7 +72,7 @@ function App() {
         <Nav.Link className="nav-link" href="/Vegan">Vegan</Nav.Link>
       </NavDropdown>
       
-      <NavDropdown title="Meals" id="collasible-nav-dropdown">
+      <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Meals" id="collasible-nav-dropdown">
         <Nav.Link className="nav-link"  href="/Breakfast">Breakfast</Nav.Link>
         <Nav.Link className="nav-link"  href="/Lunch">Lunch</Nav.Link>
         <Nav.Link className="nav-link"  href="/Dinner">Dinner</Nav.Link>
@@ -80,7 +80,7 @@ function App() {
         <Nav.Link className="nav-link"  href="/Teatime">Teatime</Nav.Link>
       </NavDropdown>
 
-      <NavLink to="/mycookbook">My Cookbook</NavLink>
+      <NavLink style={{ textDecoration: 'none' , color: "#000" , fontSize: "22px" , fontFamily:'Calistoga'}} className="mt-2 ml-3 mycookbook" to="/mycookbook">My Cookbook</NavLink>
 
       </Nav>
       </Navbar.Collapse>

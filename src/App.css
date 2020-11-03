@@ -1,0 +1,34 @@
+.nav-link{
+  color: black!important;
+  padding: 0 10px!important;
+  margin-top: 8px;
+  text-align: center;
+  font-family: 'Calistoga', cursive;
+  font-size: 22px;
+}
+
+.nav-link:hover{
+  background-color: #f3f7f8;
+}
+
+/* .mycookbook:hover{
+background-color:#000;
+color: greenyellow!important;
+border-radius: 20px;
+width: 150px;
+text-align: center;
+} */
+
+.navbar-expand-lg:hover{
+  background-color:#f3f7f8;
+  border-radius: 20px;
+
+}
+
+.navbar-brand{
+  margin-top: 5px;
+  font-size: 20px!important;
+  border: 1px solid #000;
+  padding: 10px;
+  
+}
