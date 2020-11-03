@@ -1,0 +1,53 @@
+.Meal{
+  height: 100vh;
+  background-color:#f2f6f7;
+  /* display: flex;
+  justify-content: center; */
+  /* flex-direction: column; */
+  background-image: url(../../components/Home/home-components/css/images/meal-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  overflow-x: hidden;
+}
+
+.Meal .welcomeMSG{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  margin: 120px auto 30px 40px;
+}
+
+.welcomeMSG>h1{
+  font-family: 'Calistoga', cursive;
+  font-size: 80px;
+  text-decoration: rgb(13, 13, 70) underline double;
+  
+}
+
+.welcomeMSG>p{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 50px ;
+}
+
+.card-text{
+  margin: 1px;
+  text-align: center;
+  font-size:17px;
+  font-family: 'Calistoga', cursive;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 25px!important;
+  font-family: 'Calistoga', cursive;
+}
+
+.card:hover{
+  transform: scale(1.035);
+}
+

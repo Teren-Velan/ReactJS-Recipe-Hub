@@ -12,16 +12,13 @@ import Indian from "./cuisine-components/Indian"
 import Italian from "./cuisine-components/Italian"
 import Japanese from "./cuisine-components/Japanese"
 import Mexican from "./cuisine-components/Mexican"
-import MiddleEastern from "./cuisine-components/MiddleEastern"
+import Mediterranean from "./cuisine-components/Mediterranean"
 import Nordic from "./cuisine-components/Nordic"
 
-import Balanced from "./diet-components/Balanced"
-import HighFiber from "./diet-components/HighFiber"
+
 import GlutenFree from "./diet-components/GlutenFree"
 import HighProtein from "./diet-components/HighProtein"
 import Keto from "./diet-components/Keto"
-import LowCarbs from "./diet-components/LowCarbs"
-import LowFats from "./diet-components/LowFats"
 import Paleo from "./diet-components/Paleo"
 import Pescatarian from "./diet-components/Pescatarian"
 import Vegetarian from "./diet-components/Vegetarian"
@@ -61,16 +58,12 @@ function App() {
         <Nav.Link className="nav-link" href="/Italian">Italian</Nav.Link>
         <Nav.Link className="nav-link" href="/Japanese">Japanese</Nav.Link>
         <Nav.Link className="nav-link" href="/Mexican">Mexican</Nav.Link>
-        <Nav.Link className="nav-link" href="/MiddleEastern">Middle Eastern</Nav.Link>
+        <Nav.Link className="nav-link" href="/Mediterranean">Mediterranean</Nav.Link>
         <Nav.Link className="nav-link" href="/Nordic">Nordic</Nav.Link>
       </NavDropdown>
 
       <NavDropdown title="Diet" id="collasible-nav-dropdown">
-        <Nav.Link className="nav-link" href="/Balanced">Balanced</Nav.Link>
-        <Nav.Link className="nav-link" href="/HighFiber">High-Fiber</Nav.Link>
         <Nav.Link className="nav-link" href="/HighProtein">High-Protein</Nav.Link>
-        <Nav.Link className="nav-link" href="/LowCarbs">Low-Carbs</Nav.Link>
-        <Nav.Link className="nav-link" href="/LowFats">Low-Fats</Nav.Link>
         <Nav.Link className="nav-link" href="/GlutenFree">Gluten-Free</Nav.Link>
         <Nav.Link className="nav-link" href="/Keto">Keto</Nav.Link>
         <Nav.Link className="nav-link" href="/Paleo">Paleo</Nav.Link>
@@ -125,34 +118,22 @@ function App() {
         <Route path="/Mexican">
           <Mexican/>
         </Route>
-        <Route path="/MiddleEastern">
-          <MiddleEastern/>
+        <Route path="/Mediterranean">
+          <Mediterranean/>
         </Route>
         <Route path="/Nordic">
           <Nordic/>
         </Route>
 
 
-        <Route path="/Balanced">
-          <Balanced/>
-        </Route>
         <Route path="/GlutenFree">
           <GlutenFree/>
-        </Route>
-        <Route path="/HighFiber">
-          <HighFiber/>
         </Route>
         <Route path="/HighProtein">
           <HighProtein/>
         </Route>
         <Route path="/Keto">
           <Keto/>
-        </Route>
-        <Route path="/LowCarbs">
-          <LowCarbs/>
-        </Route>
-        <Route path="/LowFats">
-          <LowFats/>
         </Route>
         <Route path="/Paleo">
           <Paleo/>

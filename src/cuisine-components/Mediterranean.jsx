@@ -3,7 +3,7 @@ import axios from "axios"
 import "./css/Cuisine.css"
 import CuisineOverall from './CuisineOverall';
 
-function Nordic() {
+function Mediterranean() {
   useEffect(() => {
     getRandomData();
   }, []);
@@ -13,7 +13,7 @@ function Nordic() {
   let YOUR_APP_KEY = "6f1741200d3b3e4072b2622c0cea3d72"
   async function getRandomData() {
     try {
-      let result = await axios.get(`https://api.edamam.com/search?q=nordic&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=40`
+      let result = await axios.get(`https://api.edamam.com/search?q=Mediterranean&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=40`
       );
       console.log(result.data.hits)
       setCuisine(result.data.hits);
@@ -24,13 +24,12 @@ function Nordic() {
   return (
     <div className="Cuisine">
     <div className="welcomeMSG">
-      <h1>Nordic Cuisine</h1>
-      <p>New Nordic Cuisine is a culinary movement which has been developed in the Nordic countries and Scandinavia in particular since the 2000s with Denmark being centre of the movement. New Nordic Cuisine was propelled by and found inspiration in ideas and a manifesto written by food activist and entrepreneur Claus Meyer and a number of Scandinavian chefs in 2004 in Copenhagen. </p>
+      <h1>Mediterranean Cuisine</h1>
+      <p>Mexican cuisine consists of the cooking cuisines and traditions of the modern state of Mexico. Its roots lie in a combination of Mesoamerican and Spanish cuisine. Many of its ingredients and methods have their roots in the first agricultural communities such as the Maya who domesticated maize, created the standard process of maize nixtamalization, and established their foodways (Maya cuisine).</p>
     </div>
    <CuisineOverall cuisine = {cuisine} />
   </div>
   )
 }
 
-
-export default Nordic
+export default Mediterranean

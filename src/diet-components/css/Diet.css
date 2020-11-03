@@ -1,10 +1,10 @@
-.American{
+.Diet{
   height: 100vh;
   background-color:#f2f6f7;
   /* display: flex;
   justify-content: center; */
   /* flex-direction: column; */
-  background-image: url(../../components/Home/home-components/css/images/background-img-MED.jpg);
+  background-image: url(../../components/Home/home-components/css/images/diet-background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
