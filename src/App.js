@@ -1,3 +1,5 @@
+import React, {useState , useEffect} from 'react'
+import axios from "axios";
 import logo from './logo.svg';
 import './App.css';
 import MainHome from "./components/Home/home-components/Main-Home"
@@ -36,8 +38,11 @@ import { Navbar, Nav , NavDropdown } from "react-bootstrap";
 
 
 function App() {
+  
   return (
     <div className="App">
+
+
 
     <Router>
         <Navbar className="mt-4 ml-5 position-absolute" collapseOnSelect expand="lg" bg="transparent" variant="light">
@@ -177,10 +182,6 @@ function App() {
         <Route path="/Teatime">
           <Teatime/>
         </Route>
-
-
-
-
       </Switch>
     </Router>
 
