@@ -3,43 +3,21 @@ import axios from "axios";
 import logo from './logo.svg';
 import './App.css';
 import MainHome from "./components/Home/home-components/Main-Home"
+import SearchPage from './components/Home/home-components/Top-Home-Components/SearchPage';
 import MyCookbook from "../src/MyCookbook-component/MyCookbook"
-import American from './cuisine-components/American'
-import Asian from "./cuisine-components/Asian"
-import Caribbean from "./cuisine-components/Caribbean"
-import French from "./cuisine-components/French"
-import Indian from "./cuisine-components/Indian"
-import Italian from "./cuisine-components/Italian"
-import Japanese from "./cuisine-components/Japanese"
-import Mexican from "./cuisine-components/Mexican"
-import Mediterranean from "./cuisine-components/Mediterranean"
-import Nordic from "./cuisine-components/Nordic"
-
-
-import GlutenFree from "./diet-components/GlutenFree"
-import HighProtein from "./diet-components/HighProtein"
-import Keto from "./diet-components/Keto"
-import Paleo from "./diet-components/Paleo"
-import Pescatarian from "./diet-components/Pescatarian"
-import Vegetarian from "./diet-components/Vegetarian"
-import Vegan from "./diet-components/Vegan"
-
-import Breakfast from "./meal-components/Breakfast"
-import Lunch from "./meal-components/Lunch"
-import Dinner from "./meal-components/Dinner"
-import Snacks from "./meal-components/Snacks"
-import Teatime from "./meal-components/Teatime"
-
+import OveralDisplay from './cuisine-components/OveralDisplay'
 import {BrowserRouter as Router,Route,Switch,NavLink} from "react-router-dom";
 import { Navbar, Nav , NavDropdown } from "react-bootstrap";
 
 
+
 function App() {
+
+  const [search,setSearch] = useState("")
+
   
   return (
     <div className="App">
-
-
 
     <Router>
         <Navbar className="mt-4 ml-5 position-absolute" collapseOnSelect expand="lg">
@@ -47,7 +25,7 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-        <Nav.Link style={{color: "#000" , fontSize: "22px"}}  href="/">Home</Nav.Link>
+        <Nav.Link  style={{color: "#000" , fontSize: "22px"}}  href="/">Home</Nav.Link>
 
       <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Cuisine" id="collasible-nav-dropdown">
         <Nav.Link className="nav-link" href="/American">American</Nav.Link>
@@ -64,7 +42,7 @@ function App() {
 
       <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Diet" id="collasible-nav-dropdown">
         <Nav.Link className="nav-link" href="/HighProtein">High-Protein</Nav.Link>
-        <Nav.Link className="nav-link" href="/GlutenFree">Gluten-Free</Nav.Link>
+        <Nav.Link className="nav-link" href="/Gluten-Free">Gluten-Free</Nav.Link>
         <Nav.Link className="nav-link" href="/Keto">Keto</Nav.Link>
         <Nav.Link className="nav-link" href="/Paleo">Paleo</Nav.Link>
         <Nav.Link className="nav-link" href="/Pescatarian">Pescatarian</Nav.Link>
@@ -88,80 +66,16 @@ function App() {
 
       <Switch>
         <Route path="/" exact>
-          <MainHome/>
+          <MainHome search = {search} setSearch={setSearch}/>
         </Route>
         <Route path="/mycookbook" exact>
           <MyCookbook/>
         </Route>
-
-        <Route path="/American">
-          <American/>
+        <Route path="/searchpage" exact>
+          <SearchPage/>
         </Route>
-        <Route path="/Asian">
-          <Asian/>
-        </Route>
-        <Route path="/Caribbean">
-          <Caribbean/>
-        </Route>
-        <Route path="/French">
-          <French/>
-        </Route>
-        <Route path="/Indian">
-          <Indian/>
-        </Route>
-        <Route path="/Italian">
-          <Italian/>
-        </Route>
-        <Route path="/Japanese">
-          <Japanese/>
-        </Route>
-        <Route path="/Mexican">
-          <Mexican/>
-        </Route>
-        <Route path="/Mediterranean">
-          <Mediterranean/>
-        </Route>
-        <Route path="/Nordic">
-          <Nordic/>
-        </Route>
-
-
-        <Route path="/GlutenFree">
-          <GlutenFree/>
-        </Route>
-        <Route path="/HighProtein">
-          <HighProtein/>
-        </Route>
-        <Route path="/Keto">
-          <Keto/>
-        </Route>
-        <Route path="/Paleo">
-          <Paleo/>
-        </Route>
-        <Route path="/Pescatarian">
-          <Pescatarian/>
-        </Route>
-        <Route path="/Vegan">
-          <Vegan/>
-        </Route>
-        <Route path="/Vegetarian">
-          <Vegetarian/>
-        </Route>
-
-        <Route path="/Breakfast">
-          <Breakfast/>
-        </Route>
-        <Route path="/Lunch">
-          <Lunch/>
-        </Route>
-        <Route path="/Dinner">
-          <Dinner/>
-        </Route>
-        <Route path="/Snacks">
-          <Snacks/>
-        </Route>
-        <Route path="/Teatime">
-          <Teatime/>
+        <Route path="/:name" exact>
+          <OveralDisplay/>
         </Route>
       </Switch>
     </Router>

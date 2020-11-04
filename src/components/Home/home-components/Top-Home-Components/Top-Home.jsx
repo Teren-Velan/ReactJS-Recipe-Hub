@@ -3,10 +3,10 @@ import "/Users/terenvelan/Documents/sei25sg/Unit2/Project2/project2/src/componen
 import HeroSection from '../Top-Home-Components/HeroSection'
 
 
-function Home() {
+function Home({search , setSearch}) {
   return (
     <div className="Home">
-      <HeroSection/>
+      <HeroSection search ={search} setSearch={setSearch} />
     </div>
   )
 }

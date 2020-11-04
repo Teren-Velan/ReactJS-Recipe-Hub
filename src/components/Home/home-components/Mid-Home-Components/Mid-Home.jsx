@@ -6,12 +6,9 @@ function MidHome() {
   return (
     <div className="Mid-Home">
       <div className ="hero">
-        <h1>Explore our variety of cuisines</h1>
+        <h1>Explore a wide variety of cuisines</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-           Eos culpa, odit at, assumenda accusantium maxime ducimus 
-           earum sunt placeat, autem deleniti laborum consequatur ullam magnam. 
-           Ratione odio deleniti soluta necessitatibus?
+         Miss the joys of trying different cusines from different countries? <br/> Here at taste the world we have a wide variety of cuisines to choose from. All from the comfort of your own home.
         </p>
         <CuisineBtn/>
       </div>

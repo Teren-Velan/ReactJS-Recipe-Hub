@@ -1,35 +1,30 @@
-.Diet{
+.searchPage{
   height: 100vh;
   background-color:#f2f6f7;
   /* display: flex;
   justify-content: center; */
   /* flex-direction: column; */
-  background-image: url(../../components/Home/home-components/css/images/diet-background.jpg);
+  background-image: url(../css/images/diet-background\ search.jpg);
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
   overflow-x: hidden;
 }
 
-.welcomeMSG{
+.resultMsg{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   text-align: center;
-  margin: 120px auto 0 auto;
+  margin: 120px auto 0 -130px;
 }
 
-.welcomeMSG>h1{
+.resultMsg>h1{
   font-family: 'Calistoga', cursive;
-  font-size: 80px;
+  font-size: 40px;
   text-decoration: rgb(13, 13, 70) underline double;
+  margin-bottom: 50px;
   
-}
-
-.welcomeMSG>p{
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 50px ;
 }
 
 .card-text{

@@ -16,7 +16,7 @@
   flex-direction: column;
   width: 50%;
   text-align: center;
-  margin: 120px auto 0 auto;
+  margin: 120px auto 40px auto;
 }
 
 .welcomeMSG>h1{
@@ -25,13 +25,6 @@
   text-decoration: rgb(13, 13, 70) underline double;
   
 }
-
-.welcomeMSG>p{
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 50px ;
-}
-
 .card-text{
   margin: 1px;
   text-align: center;

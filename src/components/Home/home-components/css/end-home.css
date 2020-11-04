@@ -1,9 +1,11 @@
 .End-Home{
   height: 80vh;
   width: 100%;
-  background-image: url(./images/background-img-2.jpg);
+  background-image: url(./images/end-home-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
+
+

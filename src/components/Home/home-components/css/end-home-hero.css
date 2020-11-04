@@ -1,4 +1,4 @@
-.container{
+.EndHomeHero{
   display: flex;
   flex-direction: column;
   width: 40%!important;
@@ -6,10 +6,23 @@
   align-items: flex-start;
   position: absolute;
   left: 12%;
-  margin-top: 200px;
-  text-align: center;
+  margin-top: 150px;
+
 }
 
-.container button{
-  margin: 0 auto;
+
+
+.EndHomeHero>h1{
+  font-family: 'Calistoga', cursive;
+  font-size: 60px;
+  text-align: left;
+}
+
+.EndHomeHero>p{
+  text-align: left;
+  font-family: 'Calistoga', cursive;
+  font-size: 17px;
+}
+.EndHomeHero>.btn{
+  margin-left: -1px;
 }
