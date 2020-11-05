@@ -40,9 +40,14 @@
 }
 
 .card{
-  margin:auto 30px;
+  margin: auto 5px;
 }
 
 div>.mr-5{
   margin-right: 190px!important;
+}
+
+.Cuisine .btn:nth-child(2){
+  width: 100%;
+  margin-left:0!important;
 }

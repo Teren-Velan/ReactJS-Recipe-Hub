@@ -70,7 +70,7 @@ function App() {
           <MyCookbook book = {book} removeFromBook = {setBook} />
         </Route>
         <Route path="/searchpage" exact>
-          <SearchPage/>
+          <SearchPage book={book} setBook = {setBook}/>
         </Route>
         <Route path="/:name" exact>
           <OveralDisplay book={book} setBook = {setBook}  />

@@ -13,7 +13,7 @@ let YOUR_APP_ID = "8faa824a"
 let YOUR_APP_KEY = "6f1741200d3b3e4072b2622c0cea3d72"
 
 
-function SearchPage() {
+function SearchPage({ book , setBook}) {
   let q = useQuery();
   let query = q.get("keyword")
   
@@ -51,11 +51,8 @@ function SearchPage() {
       <h1>{timer? `${cuisine.length} Results found for: "${query}"` : <Spinner animation="border" role="status">
       <span className="sr-only">Loading...</span>
       </Spinner>}</h1>
-        {/* <h1>{cuisine.length > 0 ? `Results for: "${query}"` : <Spinner animation="border" role="status">
-  <span className="sr-only">Loading...</span>
-  </Spinner>}</h1> */}
       </div>
-     <CuisineOverall cuisine = {cuisine} />
+     <CuisineOverall cuisine = {cuisine} setBook = {setBook} />
     </div>
   )
 }
