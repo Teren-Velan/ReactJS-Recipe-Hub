@@ -31,3 +31,7 @@
 .hero>p{
   font-size: 18px;
 }
+
+.row{
+  margin-left: 120px!important;
+}

@@ -3,26 +3,27 @@
   flex-direction: column;
   width: 40%!important;
   justify-content: flex-start;
-  align-items: flex-start;
-  position: absolute;
-  left: 12%;
-  margin-top: 150px;
-
+  align-items: center;
+  margin: 130px auto;
 }
 
 
 
 .EndHomeHero>h1{
   font-family: 'Calistoga', cursive;
-  font-size: 60px;
-  text-align: left;
+  font-size: 80px;
+  text-align: center;
 }
 
 .EndHomeHero>p{
-  text-align: left;
+  text-align: center;
   font-family: 'Calistoga', cursive;
   font-size: 17px;
+  margin-top: 10px;
 }
 .EndHomeHero>.btn{
-  margin-left: -1px;
+  margin: auto -1px;
+  font-family: 'Calistoga', cursive;
+  width: 40%;
+  font-size: 25px;
 }

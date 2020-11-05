@@ -1,14 +1,12 @@
 .Cuisine{
   height: 100vh;
   background-color:#f2f6f7;
-  /* display: flex;
-  justify-content: center; */
-  /* flex-direction: column; */
   background-image: url(../../components/Home/home-components/css/images/background-img-MED.jpg);
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
   overflow-x: hidden;
+    
 }
 
 .welcomeMSG{
@@ -39,6 +37,9 @@
 }
 
 .card:hover{
-  transform: scale(1.035);
+  transform: scale(1.7);
 }
 
+.card{
+  margin:auto;
+}
