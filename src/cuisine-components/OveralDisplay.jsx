@@ -35,7 +35,10 @@ return (
     <div className="welcomeMSG">
       <h1>{`${name}`}</h1>
     </div>
-    <CuisineOverall cuisine={cuisine} book={book} setBook={setBook} />
+  
+      <CuisineOverall cuisine={cuisine} book={book} setBook={setBook} />
+ 
+    
   </div>
 )
 }

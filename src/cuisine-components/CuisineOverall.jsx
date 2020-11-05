@@ -15,9 +15,9 @@ function CuisineOverall({cuisine, book , setBook}) {
   }
 
   return (
-    <Row className="justify-content-center">
+    <Row className="m-auto justify-content-center " style={{ width: '100%' , height: '40rem'  }}>
     {cuisine.map((item , index) => (
-      <Card className="mr-3 mb-3" border="light" bg="warning" style={{ width: '20rem' , height: '40rem'}} key={index}>
+      <Card className="mb-5" border="light" bg="warning" style={{ width: '20rem' , height: '40rem'}} key={index}>
       <Card.Img variant="warning" src={item.recipe.image ? item.recipe.image: "http://placehold.it/300x300"} />
       <Card.Body className="d-flex flex-column" >
       <Card.Title>{item.recipe.label}</Card.Title>

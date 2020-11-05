@@ -6,7 +6,6 @@
   background-size: cover;
   background-repeat:no-repeat;
   overflow-x: hidden;
-    
 }
 
 .welcomeMSG{
@@ -41,5 +40,9 @@
 }
 
 .card{
-  margin:auto;
+  margin:auto 30px;
+}
+
+div>.mr-5{
+  margin-right: 190px!important;
 }

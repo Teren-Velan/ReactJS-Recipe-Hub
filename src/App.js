@@ -26,7 +26,7 @@ function App() {
         <NavLink  style={{color: "#000" , fontSize: "25px" , fontFamily:'Calistoga' , margin: "5px 20px"}}  to="/">Home</NavLink>
 
       <NavDropdown style={{color: "#000" , fontSize: "20px"}}  title="Cuisine" id="collasible-nav-dropdown">
-        <NavLink className="nav-link" to="/American">American</NavLink>
+        <NavLink  className="nav-link" to="/American">American</NavLink>
         <NavLink className="nav-link" to="/Asian">Asian</NavLink>
         <NavLink className="nav-link" to="/Caribbean">Caribbean</NavLink>
         <NavLink className="nav-link" to="/French">French</NavLink>
@@ -77,6 +77,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+
+    
 
     </div>
   );

@@ -19,7 +19,7 @@ function MyCookbook({book , removeFromBook}) {
       </div>
     <Row className="">
       {book.map((item, index) => (
-         <Col className="mr-5" xl={3} lg={3} md={4} sm={6} xs={12} key={index}>
+         <Col className="ml-5" xl={3} lg={3} md={4} sm={6} xs={12} key={index}>
             <Card className="mr-3 mb-3 card" border="light" bg="warning" style={{ width: '21rem' , height: '40rem'}}>
             <Card.Img variant="warning" src={item.recipe.image ? item.recipe.image: "http://placehold.it/300x300"} />
           <Card.Body className="d-flex flex-column" >
